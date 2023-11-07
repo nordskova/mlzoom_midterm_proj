@@ -1,6 +1,6 @@
 import requests
 
-url = 'http://127.0.0.1:63949/predict'
+url = 'http://localhost:9696/predict'
 data = {"text": "Life is good!"}
 
 result = requests.post(url, json=data).json()

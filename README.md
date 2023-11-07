@@ -68,6 +68,7 @@ The project was deployed to a local kubernetes cluster with minikube. Here we de
 6. Then deploy your app: 
 
 ```kubectl apply -f deploy.yaml```
+
 7. Finally, expose it:
 
 ```kubectl expose deployment flaskapi-sarcasm-deployment --type=NodePort --port=9696```
