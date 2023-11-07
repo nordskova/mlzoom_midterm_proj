@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flaskapi-sarcasm-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flaskapi
+  template:
+    metadata:
+      labels:
+        app: flaskapi
+    spec:
+      containers:
+      - name: flaskapi
+        image: sarcasm:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 9696

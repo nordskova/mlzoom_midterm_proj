@@ -1,0 +1,25 @@
+body{
+	font:15px/1.5 Arial, Helvetica,sans-serif;
+	padding: 0px;
+	background-color:#f4f3f3;
+}
+
+.container{
+	width:100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.main-header{
+			text-align:center;
+			background-color: blue;
+			height:100px;
+			width:100%;
+			margin:0px;
+		}
+		
+.btn-info {background-color: #2196F3;
+	height:40px;
+	width:100px;} /
+.btn-info:hover {background: #0b7dda;}
+
